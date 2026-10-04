@@ -1,10 +1,16 @@
+export type Todo = {
+  id: number;
+  title: string;
+  completed: boolean;
+  createdAt: string;
+};
 export interface CreateTodoRequest {
   task: string;
 }
 
 export interface UpdateTodoRequest {
-  task: string;
-  is_completed: boolean;
+  task?: string;
+  is_completed?: boolean;
 }
 
 export interface TodoResponse {
